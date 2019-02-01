@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    transition: all .2s ease-in;
+}
+body {
+    background-color: #000000;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(70, 219, 35, 0.41);
+    transition: all .5s ease-out;
+}
+.container:hover {
+    background: rgba(70, 219, 35, 0.57);
+}
+header {
+    padding: 4rem;
+    height: auto;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: url('https://media.giphy.com/media/9WC8WTZsFxkRi/giphy.gif');
+    border: 1px solid #000000;
+    
+}
+.container h1 {
+    color: #46db23;;
+}
+.piment3l {
+    color: #46db23;
+}
+.piment3l:hover::after {
+    color: white;
+    content: ' (Oswald)';
+}
+button {
+    padding: .2rem;
+    width: auto;
+    background-color: #6d2929;
+    text-decoration: none;
+    border: 1px solid black;
+    transition: all .2s ease-in;
+}
+button:hover {
+    background-color: #621c1c
+}
+button:active {
+    background-color: #af3737;
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+header img {
+    padding-top: 5rem;
+}
+.clientes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #46db23;
+    color: black;
+}
+.clientes:hover {
+    color: #46db23;
+}
+.cliente1 {
+    font-size: .6rem;
+    color: black;
+}
+.cliente1:hover {
+    color: #46db23;
+}
+@media only screen and (max-width:600px) {
+    .container h1 {
+        font-size: 1rem;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    header img {
+        display: none;
+    }
+    header {
+        margin: 0;
+    }
+    .eae {
+        font-size: .5rem;
+    }
+}
