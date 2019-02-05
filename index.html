@@ -40,12 +40,20 @@
             <p>Muito atencioso, atendeu minhas necessidades no Overwatch</p>
         </div>
     </div>
-    <input type="button" value="Play" onclick="playAudio()"/>
+    <input type="button" value="Play" onclick="toggleAudio()"/>
 
     <script>
-        playAudio = _ => {
-            let audio = new Audio("Serial Experiments Lain Opening - Duvet (8bit).mp3");
-            audio.play();
+        let audio = new Audio("Serial Experiments Lain Opening - Duvet (8bit).mp3"),
+            isPlaying = false;
+        audio.currentTime = 0; // muda isso pra mudar qnd começa o audio, em segundos eu acho
+        toggleAudio = _ => {
+            if (!isPlaying) {
+                audio.play();
+                isPlaying = true;
+            } else {
+                audio.pause();
+                isPlaying = false;
+            }
         }
     </script>
 </body>
