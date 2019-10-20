@@ -9,24 +9,46 @@
 <body>
    <header>
    <div class="container">
-    <h1 class="eae">Cheetos v2.02 piment3l edition</h1>
+    <h1 class="eae">Cheetos v2.02 <br>balamansa edition (triggão da massa) alonemos</h1>
     <div class="buttons">
-    <button type="button">Aimbot</button>
-    <button type="button">Wallhack</button>
-    <button type="button">Trigger</button>
-    <button type="button">Bhop</button>
-    <button type="button">DropHack</button>
-    <button type="button">Wintrade</button>
-    <button type="button">DropMatch</button>
-    <button type="button">Addons</button>
+    
+    <button id='triggao' type="button" onclick="toggleW(myElement)">Trigger</button>
     </div>
     
     </div>
     <img src="http://www.shellperson.net/wp-content/uploads/2010/04/ascii_art_cropped.png">
-    <p class="piment3l">Made by Piment3l</p>
+    <div class="boton">
+      
+       
+         <h3 id="bMansa">HotKeySet("9", "Encerrar")
+HotKeySet("2", "balamansa")
+MsgBox(0, "Cheetos", "pai = on")
+Sleep(4000)
+Func balamansa()
+   MsgBox(0, "Piment3l on", "Piment3l Cheetos Online")
+   While 1
+          $point = PixelSearch(957,537,963,541, 0xFE4040, 3)
+		  if IsArray($point) Then
+			   MouseClick("left")
+			   EndIf
+		  $point = PixelSearch(957,537,963,541, 0xFDB033, 3)
+          if IsArray($point) Then
+			   MouseClick("left")
+EndIf
+WEnd
+EndFunc
+Func Encerrar()
+   Exit 1
+EndFunc<br>
+
+OBS: Salve esse código no bloco de notas em formato <span id=formato>.au3</span> e baixe o AutoIT(https://www.autoitscript.com/site/autoit/downloads/) pra rodar o script, botão 2 ativa ele e 9 fecha.
+</h3>
+    </div>
+   
+    <p class="piment3l">Made by balamansaindustrias</p>
     </header>
     <div class="clientes">
-        <h1>Client's opainions</h1>
+        <h1>Client's opAinions</h1>
         <div class="cliente1">
             <h1>Pimentel Oswald</h1>
             <p>Muito atencioso, atendeu minhas necessidades no BO2</p>
@@ -54,7 +76,12 @@
                 audio.pause();
                 isPlaying = false;
             }
-        }
+        }  
+        let myElement = document.getElementById('bMansa');
+        let toggleW = element => element.style.display = element.style.display === 'none' ? 'block' : 'none';
+            
+        
+        
     </script>
 </body>
 </html>
